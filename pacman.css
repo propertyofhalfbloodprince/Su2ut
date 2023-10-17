@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Whimsy TT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Whimsy TT"), url("whimsytt.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 10px 20px;
+  background-color: black;
+}
+
+#container {
+  margin-top: 100px;
+  margin-left: 500px;
+}
+
+#ready {
+  color: yellow;
+  font-size: 22px;
+  margin-top: 200px;
+align-items: center;
+margin-left: 180px;
+  font-weight: bold;
+  font-family: "Whimsy TT";
+
+  display: none;
+}
+
+#Gameover {
+  color: yellow;
+  font-size: 22px;
+  margin-top: 200px;
+align-items: center;
+margin-left: 150px;
+  font-weight: bold;
+  font-family: "Whimsy TT";
+
+  display: none;
+}
+
+#win {
+  color: yellow;
+  font-size: 22px;
+  margin-top: 200px;
+align-items: center;
+margin-left: 130px;
+  font-weight: bold;
+  font-family: "Whimsy TT";
+
+  display: none;
+}
+
+#container {
+  background-color: black;
+}
+
+#Score {
+  color: white;
+  margin: 0;
+  font-family: "Whimsy TT";
+  font-size: large;
+  margin-bottom: 7px;
+  margin-left: 3px;
+
+}
+#restart {
+  color: white;
+  margin: 0;
+  font-family: "Whimsy TT";
+  font-size: large;
+  float:  left;
+  padding-left: 260px;
+  cursor: pointer;
+
+}
+#scorety{
+  display: none;
+
+
+}
+
+#Reset {
+  color: yellow;
+  font-family: "Whimsy TT";
+  font-size: large;
+  position: absolute;
+  top: 555px;
+  left: 545px;
+  display: none;
+  word-spacing: 3px;
+}

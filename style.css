@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'tt';
+  src: url(tt.ttf);
+}
+#sign{
+  background-image: url(sig.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position-y: bottom ;
+  position: relative;
+  height: 700px;
+  width: 350px;
+  left:43.7%;
+  top:40%;
+  perspective: 100px;
+}
+#lol{
+  font-family: 'tt',sans-serif;
+  color: #000000;
+  border-color: black;
+  font-size: 22px;
+  top:53%;
+  padding: 50px;
+  padding-top: 45px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateY(-5deg);
+}
+#hh{
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateY(-4deg);
+  left:15%;
+  top: 63%;
+}
+#textInput{
+  background-color: rgba(0, 0, 0, 0.36);
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
+  border: 0;
+  text-align: center;
+  font-family: 'tt';
+  font-size: 22px;
+  color: aliceblue;
+}
+
+body{
+  background-image: url(game.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#box1{
+  background-image: url(boxf.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 170px;
+  width: 110px;
+  left:68.7%;
+  bottom:140px;
+}
+#box3{
+  background-image: url(boxff.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 170px;
+  width: 110px;
+  left:68.7%;
+  bottom:125px;
+}
+#key{
+  background-image: url(key.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 45px;
+  width: 30px;
+  left:68.7%;
+  bottom:195px;
+}
+#lock{
+  background-image: url(lock.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 45px;
+  width: 30px;
+  right:80.7%;
+  bottom:320px;
+  z-index: 55;
+}
+#box2{
+  background-image: url(box22.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nbInput{
+  width: 30px;
+  height:40px;
+  font-size: 25px;
+  cursor: pointer;
+}
+#hhh{
+  width: 300px;
+  height: 100px;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: flex;
+}
+#hh2{
+  list-style: none;
+  width: 40px;
+  cursor: pointer;
+}
+#submit{
+  position: absolute;
+  top: 10px;
+  width: 20px;
+  height: 25px;
+  background-color: green;
+}
+.nbInput{
+  text-align: center;
+  align-items: center;
+  font-family: 'tt';
+  font-size: 30px;
+}
+#textbubble{
+  position: absolute;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.356);
+  font-size: 15px;
+  color:white;
+  left: 50%;
+  top: 0.5%;
+  padding-top: 3px;
+  border-radius: 20px; 
+}
+#arrow{
+  background-image: url(arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 65px;
+  width: 70px;
+  bottom:2.5%;
+  left: 3%;
+  rotate: 130deg;
+  transform: scaleY(-1);
+}
+#key{
+  cursor: pointer;
+}
+#copykey{
+  cursor: pointer;
+}
+#lock{
+  cursor: pointer;
+}
+#musicss{
+  background-image: url(icons8-sound-on-80no.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 0.5%;
+  bottom: 93%;
+  z-index: 10;
+}
+#musicswaves{
+  background-image: url(icons8-sound-on-rads.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 2.15%;
+  bottom: 93%;
+  z-index: 10;
+  display: none;
+}
+
+  

@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin:0;
+
+  }
+body{
+	background-color:#111;
+
+  
+}
+#demo{
+  position:relative;
+  width:800px;
+  height:300px;
+margin:auto;
+  overflow:hidden;
+  text-align:center;
+  margin:auto;
+ margin-top: 15%;
+color: white;
+}
+
+#demo h3 {
+  position:absolute;
+  font-family: 'Asap', sans-serif;
+  font-weight:700;
+  margin:0;
+  padding:0;
+  width:800px;
+  text-align:center;
+  visibility:hidden;
+  font-size:100px;
+  top:65px;
+  color: rgb(244, 244, 244);
+}
+#hell{
+    position:absolute;
+    text-align:center; 
+    list-style-type: circle;
+    width:800px;
+    font-family: 'Asap', sans-serif;
+  font-weight:700;
+  font-size:20px;
+  display: none;
+  color: rgb(244, 244, 244);
+}
+
+ul li {
+   
+
+    margin: 6px;
+    color: rgb(244, 244, 244);
+    list-style:square;
+  }

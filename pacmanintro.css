@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Whimsy TT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Whimsy TT"), url("whimsytt.ttf") format("truetype");
+}
+
+body{
+  background-color: black;
+}
+#bigdiv {
+  width: 425px;
+  height: 425px;
+  display: block;
+  position: relative;
+
+  font-family: "Whimsy TT";
+  margin-top: 130px;
+  margin-left: 500px;
+}
+
+#smalldiv {
+  font-family: "Whimsy TT";
+  align-items: center;
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  align-items: center;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+#moz {
+  margin-top: 150px;
+}
+
+.stage {
+  margin-top: 10px;
+}
+.btn {
+  width: 110px;
+  font-size: 20px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #c38b8b;
+  font-family: "Whimsy TT";
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.btn::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  animation: move 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+span {
+  padding: none;
+  margin: none;
+}
+#pp {
+  color: #1ddde8;
+}
+#ll {
+  color: #e81d1d;
+}
+#aa {
+  color: #1de840;
+}
+#yy {
+  color: #e8b71d;
+}
+#ss {
+  color: aliceblue;
+}
+#dd {
+  color: #c38b8b;
+}
+#rr {
+  color: #dd00f3;
+}
+#qq {
+  color: #d8236b;
+}
+#nn {
+  color: #d84723;
+}
+#uu {
+  color: #8ad823;
+}
+#ii {
+  color: #10f6db;
+}
+#kk {
+  color: #de91ec;
+}
+#hh {
+  color: #8f10f6;
+}
+#mm {
+  color: #ffff17;
+}

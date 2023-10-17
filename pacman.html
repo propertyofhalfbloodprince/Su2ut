@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pacmanintro.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://anijs.github.io/lib/anicollection/anicollection.css"
+    />
+    <link rel="stylesheet" href="pacman.css" />
+    <title>Pacman</title>
+  </head>
+  <body>
+    <audio id="Audio_start" src="Naruto Shippuden - Opening 3  Blue Bird.mp3"></audio>
+    <audio id="Audio_death" src="./audio/death.mp3"></audio>
+    <audio id="Audio_eat" src="./audio/eat.ogg"></audio>
+    <div id="bigdiv">
+      
+ 
+      <div id="smalldiv">
+        <div id="moz">
+          <span id="pp">This</span> <span id="ll">game</span>
+          <span id="aa">is</span> <span id="yy">for</span>
+          <span id="ss">you</span> <span id="dd">to</span>
+          <span id="rr">feel</span> <span id="uu">like</span>
+          <span id="ii">you</span> <span id="qq">won</span>
+          <span id="mm">at</span> <span id="hh">something</span>
+          <span id="kk">enjoy!</span>
+      
+        </div>    <div id="ready">READY!</div>
+      <div id="Gameover">Game Over </div>
+      <div id="win">You Win</div>
+        <div id="arjukumerft"class="stage">
+          <button id="playbtn" class="btn">
+            <span id="pp">P</span><span id="ll">l</span><span id="aa">a</span
+            ><span id="yy">y</span>
+          </button>
+        </div> 
+        
+      
+      </div>
+      <div id="scorety">
+     <p id="Score">
+        <span>Score: </span>
+        <span id="scoretag">0</span>
+      </p></div>
+    
+      <canvas id="canvas"></canvas>
+    </div>
+    <p id="Reset">
+      <span
+        >The game will restart after <span id="counter">5</span
+        ><span id="second"> seconds</span></span
+      >
+    </p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+    <script src="pacman.js"></script>
+  </body>
+</html>
