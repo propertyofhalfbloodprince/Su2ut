@@ -1,0 +1,127 @@
+body{
+    background-image: url(intro.jpg);
+    cursor: url("cursor.svg"), auto;
+    position: absolute;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 20%;
+    overflow: hidden;
+}
+#fire{
+    position: absolute;
+    width:300px;
+    height:200px;
+    left: 330px;
+    top: 390px;
+}
+@font-face {
+    font-family: 'okhh';
+    src: url(NoScary-regular.ttf);
+  }
+@font-face {
+    font-family: 'okhbb';
+    src: url(NightsideDemoRegular.ttf);
+  }
+#grave{
+    background-image: url(gravess.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width:750px;
+    height:500px;
+    left: 380px;
+    top:200px;
+}
+#bekh{
+    background-image: url(beh.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width:350px;
+    height:500px;
+    left: 1020px;
+    top:155px;
+}
+#msg{
+    font-size: 42px;
+    font-family: 'okhh';
+    color:rgb(0, 0, 0);
+    padding: 20px;
+    width:400px;
+    height: 290px;
+    text-align: center;
+    position: absolute;
+    left: 21%;
+    padding-top: 185px;
+    text-shadow: 2px 2px 8px #575757;
+    line-height: 90%;
+}
+#hbb{
+    background-color: rgba(0, 0, 0, 0.207);
+    font-size: 28px;
+    font-family: 'okhbb';
+    color: whitesmoke;
+    text-align: center;
+    position: absolute;
+    top:350px;
+    left:455px;
+    width:560px;
+    padding: 25px;
+}
+#okkk{
+    font-size: 120px;
+    font-family: 'okhbb';
+    color: rgb(145, 19, 255);
+    text-shadow:2px 2px 8px #000000;
+    text-align: center;
+    position: absolute;
+    top:180px;
+    left:490px;
+    width:350px;
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.akh{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top:480px;
+    left:590px;
+    width:330px;
+  --b: 3px; 
+  --s: .45em; 
+  --color:#e1c67a ;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color:rgb(134, 92, 226);
+  text-shadow:2px 2px 8px #000000;;
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,#122da7 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.akh:hover,
+.akh:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+  box-shadow: 0px 0px 20px rgb(54, 51, 255);;
+}
+
+.akh:active {
+  background:#122da7;
+  color: #fff;
+}
+
+
+

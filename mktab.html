@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="grave.png" />
+    <link rel="stylesheet" href="spacegame.css" />
+    <link rel="stylesheet" href="mktab.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="styleg.css" />
+    <title>SUMUR</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <audio id= "makdus" src="mktab.mp3" preload="auto"></audio>
+    <div id="shoe" class="shoes">    
+    <div id="copyepsilon" class="copy"><img src="epsilon2.png" height="50px" width="29px"></div>
+    <div id="copysigma" class="copy"><img src="sigma2.png" height="50px" width="29px"></div>
+    <div id="copygamma" class="copy"><img src="gamma2.png" height="50px" width="29px"></div>
+  </div>
+    <div id="musicss"></div>
+    <div id="musicswaves"></div>
+    <div id="laptop" onclick="sa2utgame()"></div>
+    <div id="computer"></div>
+    <div id="grades"></div>
+    <div id="kalakish"></div>
+    <div id="sus"></div>
+    <div id="shelfs" class="shelf"></div>
+    <div id="tablet"></div>
+    <div class="notesclass" id="notes"></div>
+    <div id="container2">
+      <label for="settingbutton"> <span id="checkmenu"></span> </label>
+          <input type="checkbox" id="settingbutton" /> </div>
+        <div id="container">
+          <div id="menudivs">
+            <div class="babymenu3" id="menu3">
+              <ul>
+                <button id="escbutton">&times;</button>
+              </ul>
+            </div>
+            <div class="babymenu" id="menu1">Settings:</div>
+            <div class="babymenu2" id="menu2">
+              <ul>
+                <button class="menubtn" id="restarto">Restart</button>
+              </ul>
+              <ul>
+                <button class="menubtn" id="menuexit">
+                  <span> Exit </span>
+                </button>
+              </ul>
+            </div>
+          </div>
+      </div>
+        <div id="hint_button"></div>
+        <div id="hint_board"></div>
+        <div id="hint_msg">That beaver sure has an
+          <br>interesting way of speaking !</div>
+          <div id="hint_msg1">It sucks being left on
+            <br> seen right ??
+          </div>
+  
+        <div id="bigdiv" >  <div id="tabdiv"><img id="sanjub" src="tablett.png" width="830px" height="530px"></div>
+        <div id="smalldiv"> <div id="startgame"><div id="losing">Try and reach a score of 3000</div>
+      <div id="contain"><img id="button" src="Untitled_design__2_-removebg-preview.png" width="200px" height="60px"><div id="texty">Play</div></div></div></div>
+      <div id="exit">esc</div><div id="scores">Score : <span id="nbs">0</span></div>
+      <canvas id="canvasty"></canvas><div id="gamma"></div>  </div>
+
+        <div id="compscreen"></div>
+    <div id="containeR">
+      <div id="inputs" class="inputs">
+    
+        <input class="inpuT" type="text" inputmode="numeric" maxlength="1"/>
+        <input class="inpuT" type="text" inputmode="numeric" maxlength="1"/>
+        <input class="inpuT" type="text" inputmode="numeric" maxlength="1"/>
+        <input class="inpuT" type="text" inputmode="numeric" maxlength="1"/>
+        <input class="inpuT" type="text" inputmode="numeric" maxlength="1"/>
+      </div>
+    </div>
+    <div id="containerR">
+     <div id="whatsapp"></div>
+     <div id="window"></div>
+      <div id="chatbox" class="chat-box">
+        <div id="sigma"></div>
+        <div class="playeR">
+          <span id="seen" class="arrow"></span>
+         <img src="bagera.jpg" alt="bagera">
+          <div class="playeR-info">
+            <h3>Bagera</h3>
+            <p id="online">online</p>
+          </div>
+        </div>
+        <div class="chats">
+          
+          <div class="playeR-chat">Hi</div>
+          <div id="mychat" class="my-chat">Bonjourr</div>
+          <div id="playerchat" class="playeR-chat">fi aalemet lyom yeslamu</div>
+          <div id="playerchat2" class="playeR-chat">ah left on seen 😔</div>
+        </div>
+        <div id="choosinG">
+          <div id="optioN1" class="choosinG-info info1">Bonjour</div>
+          <div id="optioN2" class="choosinG-info info2">hello</div>
+          <div id="optioN3" class="choosinG-info info3">ahlan</div>
+        </div>
+        <div id="sendthing"class="chat-input">
+          <input type="text" placeholder="Choose the correct answer"/>
+          <button class="send-btn">
+            <img src="send-icon.png" alt="send">
+          </button>
+        </div>
+      </div>
+    </div>
+        <div id="dark"></div>
+        <audio id="clown" src="clown.mp3" preload="auto"></audio>
+        <div id="game1">
+        <div id="lap"></div>
+        <div id="newz"></div>
+        <div id="lol"></div>
+        <svg id="game" viewBox="0 0 1000 400" overflow="visible"  visibility="hidden" >
+          <linearGradient id="ArcGradient">
+            <stop offset="0" stop-color="white" stop-opacity=".15" />
+            <stop offset="30%" stop-color="white" stop-opacity="0" />
+          </linearGradient>
+          <path
+            id="arc"
+            fill="none"
+            stroke="url(#ArcGradient)"
+            stroke-width="4.5"
+            d="M250,250c250-400,550-400,800,0"
+            pointer-events="none"
+          />
+          <defs>
+            <g id="arrow" >
+              <line id="alam" x2="60" fill="none" stroke="#e3c70e" stroke-width="4.1" />
+              <polygon id="tuna" fill="#c79777" points="61 2 56 2 56 -2 61 -2" /> 
+              <polygon fill="#000" points="66 0 61 2 61 -2" />
+              <polygon id="mhaye" fill="#b04159" points="2.3 -2.3 -3.5 -2.3 -3.7 0 -3.5 2.3 2 2.3 1.5 0" />
+            </g>
+          </defs>
+          <line x1="810" y1="285" x2="822" y2="360" stroke="black" stroke-width="4.1" />
+          <line x1="780" y1="285" x2="760" y2="360" stroke="black" stroke-width="4.1" />
+          <g id="target" transform="translate(720,125),scale(0.7)">
+         <path
+            id="C1"
+            style="opacity:1;fill:#d69d00;stroke-width:0.273668"
+            transform="matrix(0.95656366,0.29152354,-0.32890978,0.94436135,0,0)"
+            d="M 224.94598,111.06819 A 73.470131,90.186043 0 0 1 151.47585,201.25423 73.470131,90.186043 0 0 1 78.005714,111.06819 73.470131,90.186043 0 0 1 151.47585,20.882149 73.470131,90.186043 0 0 1 224.94598,111.06819 Z" />
+         <path
+            id="C2"
+            style="opacity:1;fill:#9E0059;stroke-width:0.264583"
+            transform="rotate(20.136885)"
+            d="M 210.2961,102.17361 A 61.297295,75.344589 0 0 1 148.99881,177.5182 61.297295,75.344589 0 0 1 87.701515,102.17361 61.297295,75.344589 0 0 1 148.99881,26.829018 61.297295,75.344589 0 0 1 210.2961,102.17361 Z" />
+         <path
+            id="C3"
+            style="opacity:1;fill:#FF5400;stroke-width:0.270872"
+            transform="matrix(0.96026235,0.27909893,-0.3039709,0.95268132,0,0)"
+            d="M 191.32206,111.29787 A 50.270855,63.932545 0 0 1 141.05121,175.23041 50.270855,63.932545 0 0 1 90.780354,111.29787 50.270855,63.932545 0 0 1 141.05121,47.365322 50.270855,63.932545 0 0 1 191.32206,111.29787 Z" />
+         <path
+            id="C4"
+            style="opacity:1;fill:#FF0054;stroke-width:0.294803"
+            transform="matrix(0.95334518,0.30188236,-0.29680655,0.95493763,0,0)"
+            d="M 178.7206,108.48292 A 40.846405,53.276974 0 0 1 137.87419,161.75989 40.846405,53.276974 0 0 1 97.027786,108.48292 40.846405,53.276974 0 0 1 137.87419,55.205944 40.846405,53.276974 0 0 1 178.7206,108.48292 Z" />
+         <path
+            id="C5"
+            style="opacity:1;fill:#ce49ff;stroke-width:0.270981"
+            transform="matrix(0.95099067,0.30921956,-0.28970577,0.95711575,0,0)"
+            d="m 166.91163,107.24322 a 32.185802,43.525131 0 0 1 -32.1858,43.52513 32.185802,43.525131 0 0 1 -32.1858,-43.52513 32.185802,43.525131 0 0 1 32.1858,-43.525134 32.185802,43.525131 0 0 1 32.1858,43.525134 z" />
+         <path
+            id="C6"
+            style="opacity:1; fill:#390099;stroke-width:0.28523"
+            transform="matrix(0.98046446,0.19669633,-0.23042615,0.97308982,0,0)"
+            d="m 150.6307,122.86255 a 24.070499,35.690517 0 0 1 -24.0705,35.69052 24.070499,35.690517 0 0 1 -24.0705,-35.69052 24.070499,35.690517 0 0 1 24.0705,-35.690519 24.070499,35.690517 0 0 1 24.0705,35.690519 z" />
+       </g>
+          <g
+            id="bow"
+            fill="none"
+            stroke-linecap="round"
+            vector-effect="non-scaling-stroke"
+            pointer-events="none"
+            transform="translate(50)"
+          >
+            <polyline
+              fill="none"
+              stroke="#ddd"
+              stroke-linecap="round"
+              points="88,200 88,250 88,300"
+            />
+            <path
+              fill="none"
+              stroke="#61301d"
+              stroke-width="3"
+              stroke-linecap="round"
+              d="M88,300 c0-10.1,12-25.1,12-50s-12-39.9-12-50"
+            />
+          </g>
+          <g class="arrow-angle"><use x="150" y="250" xlink:href="#arrow" /></g>
+          <clipPath id="mask">
+            <polygon
+              opacity=".5"
+              points="20,20 890,20 890,400 20,400"
+              pointer-events="none"
+            />
+          </clipPath>
+          <g class="arrows" clip-path="url(#mask)" pointer-events="none"></g>
+         <text x="40" y="410" id="roundmsg"></text>
+        </svg>
+        <div id="warning"></div>
+        <div id="wmsg">And remember kids, the next time someone tells you "The drs won't give you random scores for no reason!” Oh yes they would.</div>
+        <div id="war"></div>
+        <div id="exitb">x</div>
+        <div class="playmenu">
+          <div class="background">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+          <div id="tt">SA2UT GRADES</div>
+          <div id="playmsg"> Another day another game. In each round, you gotta guess the subject corresponding to it and reach the score matching its grade in order to proceed and win the five rounds. Sounds easy, no?</div>
+          <button class="play" role="button"> Play </button>
+        </div>
+        <div id="arg">
+          <div id="score"></div>
+          <div id="round"></div>
+          <div id="restart">Restart</div>
+          <div id="fly"></div>
+          <div id="fly2"></div>
+          <div id="fly3"></div>
+          </div>
+        </div>
+        <div id="epsilon"></div>
+        <div id="tfi"></div>
+        <div id="susubig"></div>
+        <div id="copyg"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/g/gsap@1.19.1(TweenMax.min.js+utils/Draggable.min.js)"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js" integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ==" crossorigin="anonymous"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="scriptg.js"></script> 
+        <script src="fighting.js"></script>
+        <script src="mktab.js"></script>    
+</body>
+</html>

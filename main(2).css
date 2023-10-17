@@ -1,0 +1,337 @@
+*:not(.menubtn){
+  padding: 0;
+  margin:0;
+  cursor: url("cursor.svg"), auto;
+}
+
+#canvas{
+  position: absolute;
+  background-image: url("game.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+ }
+#canvas.active{
+ background:  linear-gradient(
+  rgba(0, 0, 0, 0.7), 
+  rgba(0, 0, 0, 0.7)
+), url("game.jpg");
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+background-repeat: no-repeat;
+background-blend-mode: darken;
+}
+#container {
+  position: absolute;
+  display: none;
+  top:18%;
+  left:8%;
+}
+#container2 {
+  position: absolute;
+  display:block;
+  top: 88%;
+  right:0px;
+  padding: 0;
+  width:5em;
+  height: 5em;
+}
+.menubtn{
+  background-color: white;
+  color:white;;
+  border-color: white;
+  border-radius: 8px;
+  font-size: 24px;
+  padding:  2.5px;
+  width: 130px;
+  height: 40px;
+  font-family: 'black_roseregular';
+  align-items: center;
+  justify-content: center;
+  background-image: url(menubtn1.png);
+}
+.menubtn:hover{
+  background-color:#598cbf;
+  color: #EBC676;
+}
+.myswitch {
+  font-size: 8px;
+  position: relative;
+  display: inline-block;
+  width: 5.5em;
+  height: 3em;
+}
+.myswitch input{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.myslider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#336AA2;
+  transition: .4s;
+  border-radius: 30px;  
+  display: flex;
+
+}
+.myslider:before {
+  position: absolute;
+  content: "";
+  height: 2.4em;
+  width: 2.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color:white;
+  transition: .4s;
+  animation: anima1 0.3s linear;
+  background-image: url(musicnoteremoved.png);
+  background-size:contain;
+}
+@keyframes anima1 {
+  0% {
+    transform: translateX(2.9em);
+  }
+  80% {
+    transform: translateX(-0.3em);
+  }
+  100% {
+    transform: translateX(0em);
+  }
+}
+.myswitch input:checked + .myslider:before  {
+  background-color:white;
+  box-shadow: none;
+  transform: translateX(100%);
+  animation: anim2 0.3s linear;
+  background-image: url(musicnote.png);
+  background-size: contain;
+}
+@keyframes anim2 {
+  0% {
+    transform: translateX(0em)
+  }
+  80% {
+    transform: translateX(2em)
+  }
+  100% {
+    transform: translateX(2.7em)
+  }
+}
+
+#menudivs{
+  margin-right:0 ;
+  margin-bottom: 0;
+  margin-top: 5%;
+  margin-left: 0;
+  width: 400px;
+  height:400px;
+  background-image: url(menu.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center;
+  opacity: 0;
+}
+#menudivs.active{
+  margin-right:0 ;
+  margin-bottom: 0;
+  margin-top: 5%;
+  margin-left: 450px ;
+  width:400px;
+  height:400px;
+  background-image: url(menu.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: block;
+  align-items: center;
+  background-position: center;
+  opacity: 100%;
+}
+.babymenu3{
+  margin-bottom: 20px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  padding-left: 70%;
+  padding-top: 12%;
+  font-family: 'black_roseregular';
+}
+.babymenu1{
+  font-size: 24px;
+  color: #336AA2;
+  display: flex;
+  width: 53%;
+  padding-left: 47%;
+  font-family: 'black_roseregular';
+  padding-top: 0;
+  margin: 0;
+}
+.babymenu{
+  font-size: 24px;
+  color: #336AA2;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding-left: 50%;
+  padding-top: 13%;
+  font-family: 'black_roseregular';
+  align-items: center;
+
+}
+.span1{
+  padding-right: 18px;
+  padding-top: 14px;
+}
+.babymenu2{
+  font-size: 24px;
+  color: #336AA2;
+  display: block;
+  font-family: 'black_roseregular';
+  width: 54%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 46%;
+  margin: 0;
+}
+
+#escbutton {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: none;
+  background-color:  #336AA2;
+  color:whitesmoke;
+  background-image: url(oyc\ \(4\).png);
+  background-size: cover;
+  font-family: 'black_roseregular';
+  box-shadow:  rgba(210, 203, 203, 0.678) 2px 2px;
+}
+#escbutton:hover{
+  background-color:#598cbf;
+  color: #EBC676;
+}
+@font-face {
+  font-family: 'black_roseregular';
+  src: url('blackrose-2onld1-webfont.woff2') format('woff2'),
+       url('blackrose-2onld1-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+#settingbutton{
+  width: 0;
+  height:0;
+  opacity: 0;
+}
+#checkmenu{
+  width: 5em;
+  height: 5em;
+  right: 0;
+  bottom: 0;
+
+  border-radius:50px;
+  position: absolute;
+  display: flex;
+  background-image: url(icons8-automatic-100.png);
+  background-size: cover;
+}
+
+#hint_button{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url(icons8-bulb-64.png);
+  background-size: cover;
+  background-position: center;
+ top: 1%;
+  left:96%
+}
+#hint_board{
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  height: 60%;
+  background-image: url(help.png);
+  background-size: cover;
+  background-position: center;
+}
+.hint_msg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  display: none; 
+  font-family: 'the_nightmareregular';
+ 
+}
+
+@keyframes fortools {
+ 0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tools_animation {
+  animation: fortools 0.5s ease;
+}
+#lockbutton{
+  opacity: 0;
+}
+#copykey{
+  background-image: url(key.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 45px;
+  width: 30px;
+  display: none;
+}
+@keyframes lula {
+  0% {
+    opacity: 0%;
+    height: 45px;
+    width: 30px;
+  }
+  100% {
+    opacity: 100%;
+    height: 50px;
+    width: 35px;
+  }
+}
+#copykey.active{
+  background-image: url(key.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  animation: lula 1s ease;
+  animation-fill-mode: forwards;
+}
+
+@font-face {
+  font-family: 'the_nightmareregular';
+  src: url('thenightmare-3zdrg-webfont.woff2') format('woff2'),
+       url('thenightmare-3zdrg-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
