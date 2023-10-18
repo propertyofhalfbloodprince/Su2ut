@@ -41,7 +41,7 @@ wait(30000).then(() => {
     demo.textContent=''
     machineGun("TO BE CONTINUED.");
    wait(5000).then(()=>{
-    window.location.href = "pacmanintro.html";
+    window.location.href = "pacman.html";
    })
     
  })
